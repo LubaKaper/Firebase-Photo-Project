@@ -3,17 +3,36 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
+		38C54E306D61BC52FC1F3D49 /* Pods_Firebase_Photo_ProjectTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = D40DB3A91C36C2C1D9B937CD /* Pods_Firebase_Photo_ProjectTests.framework */; };
+		6F87AD1190AD90190EF9573D /* Pods_Firebase_Photo_Project.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = EB52BE9E3DD975A9E5E42C64 /* Pods_Firebase_Photo_Project.framework */; };
 		8D8A147B240EE52E000E53F6 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A147A240EE52E000E53F6 /* AppDelegate.swift */; };
 		8D8A147D240EE52E000E53F6 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A147C240EE52E000E53F6 /* SceneDelegate.swift */; };
 		8D8A147F240EE52E000E53F6 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A147E240EE52E000E53F6 /* ViewController.swift */; };
-		8D8A1482240EE52E000E53F6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8A1480240EE52E000E53F6 /* Main.storyboard */; };
 		8D8A1484240EE534000E53F6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8D8A1483240EE534000E53F6 /* Assets.xcassets */; };
 		8D8A1487240EE534000E53F6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8A1485240EE534000E53F6 /* LaunchScreen.storyboard */; };
 		8D8A1492240EE534000E53F6 /* Firebase_Photo_ProjectTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A1491240EE534000E53F6 /* Firebase_Photo_ProjectTests.swift */; };
+		8D8A149F240EECFA000E53F6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 8D8A149E240EECFA000E53F6 /* GoogleService-Info.plist */; };
+		8D8A14A6240EEF4F000E53F6 /* DesignableView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A14A5240EEF4F000E53F6 /* DesignableView.swift */; };
+		8D8A14A8240EF0C6000E53F6 /* LoginScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8D8A14A7240EF0C6000E53F6 /* LoginScreen.storyboard */; };
+		8D8A14AA240EFE0C000E53F6 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D8A14A9240EFE0C000E53F6 /* LoginViewController.swift */; };
+		8D9C7BD12412C819008C2A4F /* FeedViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C7BD02412C819008C2A4F /* FeedViewController.swift */; };
+		8D9C7BD42412CB52008C2A4F /* FeedCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 8D9C7BD32412CB52008C2A4F /* FeedCell.xib */; };
+		8D9C7BD62412CB71008C2A4F /* FeedCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C7BD52412CB71008C2A4F /* FeedCell.swift */; };
+		8D9C7BD92412CC36008C2A4F /* UIViewController+NAvigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C7BD82412CC36008C2A4F /* UIViewController+NAvigation.swift */; };
+		8D9C7BDB2412CE57008C2A4F /* UIViewController+Alerts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C7BDA2412CE57008C2A4F /* UIViewController+Alerts.swift */; };
+		8D9C7BDD2412CE71008C2A4F /* UIImage+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C7BDC2412CE71008C2A4F /* UIImage+Extension.swift */; };
+		8D9C7BDF2412DE2E008C2A4F /* StorageService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8D9C7BDE2412DE2E008C2A4F /* StorageService.swift */; };
+		8DBCC401240F065B00389A39 /* AuthenticationSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCC400240F065B00389A39 /* AuthenticationSession.swift */; };
+		8DBCC403240F068500389A39 /* DatabaseService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCC402240F068500389A39 /* DatabaseService.swift */; };
+		8DBCC405240F10EA00389A39 /* MainView.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8DBCC404240F10EA00389A39 /* MainView.storyboard */; };
+		8DBCC407240F11A000389A39 /* PhotoModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCC406240F11A000389A39 /* PhotoModel.swift */; };
+		8DBCC409240F11F200389A39 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCC408240F11F200389A39 /* MainTabBarController.swift */; };
+		8DBCC40B240F121700389A39 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCC40A240F121700389A39 /* ProfileViewController.swift */; };
+		8DBCC40D240F123800389A39 /* CreatePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCC40C240F123800389A39 /* CreatePhotoViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -27,17 +46,40 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		09EC8C01C47BCD4AF10F2D83 /* Pods-Firebase-Photo-Project.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Photo-Project.debug.xcconfig"; path = "Target Support Files/Pods-Firebase-Photo-Project/Pods-Firebase-Photo-Project.debug.xcconfig"; sourceTree = "<group>"; };
+		2070E6ADDB9E4E58334CA595 /* Pods-Firebase-Photo-ProjectTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Photo-ProjectTests.debug.xcconfig"; path = "Target Support Files/Pods-Firebase-Photo-ProjectTests/Pods-Firebase-Photo-ProjectTests.debug.xcconfig"; sourceTree = "<group>"; };
+		6288482323E153E00156E628 /* Pods-Firebase-Photo-ProjectTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Photo-ProjectTests.release.xcconfig"; path = "Target Support Files/Pods-Firebase-Photo-ProjectTests/Pods-Firebase-Photo-ProjectTests.release.xcconfig"; sourceTree = "<group>"; };
 		8D8A1477240EE52E000E53F6 /* Firebase-Photo-Project.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Firebase-Photo-Project.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8A147A240EE52E000E53F6 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		8D8A147C240EE52E000E53F6 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		8D8A147E240EE52E000E53F6 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		8D8A1481240EE52E000E53F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		8D8A1483240EE534000E53F6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		8D8A1486240EE534000E53F6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		8D8A1488240EE534000E53F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		8D8A148D240EE534000E53F6 /* Firebase-Photo-ProjectTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "Firebase-Photo-ProjectTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		8D8A1491240EE534000E53F6 /* Firebase_Photo_ProjectTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Firebase_Photo_ProjectTests.swift; sourceTree = "<group>"; };
 		8D8A1493240EE534000E53F6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8D8A149E240EECFA000E53F6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		8D8A14A5240EEF4F000E53F6 /* DesignableView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DesignableView.swift; sourceTree = "<group>"; };
+		8D8A14A7240EF0C6000E53F6 /* LoginScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LoginScreen.storyboard; sourceTree = "<group>"; };
+		8D8A14A9240EFE0C000E53F6 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		8D9C7BD02412C819008C2A4F /* FeedViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedViewController.swift; sourceTree = "<group>"; };
+		8D9C7BD32412CB52008C2A4F /* FeedCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FeedCell.xib; sourceTree = "<group>"; };
+		8D9C7BD52412CB71008C2A4F /* FeedCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FeedCell.swift; sourceTree = "<group>"; };
+		8D9C7BD82412CC36008C2A4F /* UIViewController+NAvigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+NAvigation.swift"; sourceTree = "<group>"; };
+		8D9C7BDA2412CE57008C2A4F /* UIViewController+Alerts.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+Alerts.swift"; sourceTree = "<group>"; };
+		8D9C7BDC2412CE71008C2A4F /* UIImage+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Extension.swift"; sourceTree = "<group>"; };
+		8D9C7BDE2412DE2E008C2A4F /* StorageService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StorageService.swift; sourceTree = "<group>"; };
+		8DBCC400240F065B00389A39 /* AuthenticationSession.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationSession.swift; sourceTree = "<group>"; };
+		8DBCC402240F068500389A39 /* DatabaseService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatabaseService.swift; sourceTree = "<group>"; };
+		8DBCC404240F10EA00389A39 /* MainView.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = MainView.storyboard; sourceTree = "<group>"; };
+		8DBCC406240F11A000389A39 /* PhotoModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoModel.swift; sourceTree = "<group>"; };
+		8DBCC408240F11F200389A39 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
+		8DBCC40A240F121700389A39 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		8DBCC40C240F123800389A39 /* CreatePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePhotoViewController.swift; sourceTree = "<group>"; };
+		D053D8D8EFD7F8545ED5D83F /* Pods-Firebase-Photo-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Photo-Project.release.xcconfig"; path = "Target Support Files/Pods-Firebase-Photo-Project/Pods-Firebase-Photo-Project.release.xcconfig"; sourceTree = "<group>"; };
+		D40DB3A91C36C2C1D9B937CD /* Pods_Firebase_Photo_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Photo_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EB52BE9E3DD975A9E5E42C64 /* Pods_Firebase_Photo_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Photo_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +87,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				6F87AD1190AD90190EF9573D /* Pods_Firebase_Photo_Project.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +95,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				38C54E306D61BC52FC1F3D49 /* Pods_Firebase_Photo_ProjectTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +108,8 @@
 				8D8A1479240EE52E000E53F6 /* Firebase-Photo-Project */,
 				8D8A1490240EE534000E53F6 /* Firebase-Photo-ProjectTests */,
 				8D8A1478240EE52E000E53F6 /* Products */,
+				9796D9E9AE00AFB8C159F9EB /* Pods */,
+				E4CF6F18EF7742501EC29BA1 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,13 +125,17 @@
 		8D8A1479240EE52E000E53F6 /* Firebase-Photo-Project */ = {
 			isa = PBXGroup;
 			children = (
-				8D8A147A240EE52E000E53F6 /* AppDelegate.swift */,
-				8D8A147C240EE52E000E53F6 /* SceneDelegate.swift */,
-				8D8A147E240EE52E000E53F6 /* ViewController.swift */,
-				8D8A1480240EE52E000E53F6 /* Main.storyboard */,
-				8D8A1483240EE534000E53F6 /* Assets.xcassets */,
+				8D9C7BD72412CC0C008C2A4F /* Extensions */,
+				8D9C7BD22412CB2B008C2A4F /* Cells */,
+				8DBCC3FF240F063900389A39 /* FirebaseServices */,
+				8D8A14A3240EED97000E53F6 /* Controllers */,
+				8D8A14A2240EED8E000E53F6 /* Views */,
+				8D8A14A1240EED69000E53F6 /* StoryBoards */,
+				8D8A14A0240EED5E000E53F6 /* Models */,
 				8D8A1485240EE534000E53F6 /* LaunchScreen.storyboard */,
+				8D8A14A4240EEDC0000E53F6 /* SupportingFiles */,
 				8D8A1488240EE534000E53F6 /* Info.plist */,
+				8D8A149E240EECFA000E53F6 /* GoogleService-Info.plist */,
 			);
 			path = "Firebase-Photo-Project";
 			sourceTree = "<group>";
@@ -99,6 +149,103 @@
 			path = "Firebase-Photo-ProjectTests";
 			sourceTree = "<group>";
 		};
+		8D8A14A0240EED5E000E53F6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				8DBCC406240F11A000389A39 /* PhotoModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		8D8A14A1240EED69000E53F6 /* StoryBoards */ = {
+			isa = PBXGroup;
+			children = (
+				8D8A14A7240EF0C6000E53F6 /* LoginScreen.storyboard */,
+				8DBCC404240F10EA00389A39 /* MainView.storyboard */,
+			);
+			path = StoryBoards;
+			sourceTree = "<group>";
+		};
+		8D8A14A2240EED8E000E53F6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				8D8A14A5240EEF4F000E53F6 /* DesignableView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		8D8A14A3240EED97000E53F6 /* Controllers */ = {
+			isa = PBXGroup;
+			children = (
+				8D8A147E240EE52E000E53F6 /* ViewController.swift */,
+				8D8A14A9240EFE0C000E53F6 /* LoginViewController.swift */,
+				8DBCC408240F11F200389A39 /* MainTabBarController.swift */,
+				8DBCC40A240F121700389A39 /* ProfileViewController.swift */,
+				8DBCC40C240F123800389A39 /* CreatePhotoViewController.swift */,
+				8D9C7BD02412C819008C2A4F /* FeedViewController.swift */,
+			);
+			path = Controllers;
+			sourceTree = "<group>";
+		};
+		8D8A14A4240EEDC0000E53F6 /* SupportingFiles */ = {
+			isa = PBXGroup;
+			children = (
+				8D8A147A240EE52E000E53F6 /* AppDelegate.swift */,
+				8D8A147C240EE52E000E53F6 /* SceneDelegate.swift */,
+				8D8A1483240EE534000E53F6 /* Assets.xcassets */,
+			);
+			path = SupportingFiles;
+			sourceTree = "<group>";
+		};
+		8D9C7BD22412CB2B008C2A4F /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				8D9C7BD32412CB52008C2A4F /* FeedCell.xib */,
+				8D9C7BD52412CB71008C2A4F /* FeedCell.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		8D9C7BD72412CC0C008C2A4F /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				8D9C7BD82412CC36008C2A4F /* UIViewController+NAvigation.swift */,
+				8D9C7BDA2412CE57008C2A4F /* UIViewController+Alerts.swift */,
+				8D9C7BDC2412CE71008C2A4F /* UIImage+Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		8DBCC3FF240F063900389A39 /* FirebaseServices */ = {
+			isa = PBXGroup;
+			children = (
+				8DBCC400240F065B00389A39 /* AuthenticationSession.swift */,
+				8DBCC402240F068500389A39 /* DatabaseService.swift */,
+				8D9C7BDE2412DE2E008C2A4F /* StorageService.swift */,
+			);
+			path = FirebaseServices;
+			sourceTree = "<group>";
+		};
+		9796D9E9AE00AFB8C159F9EB /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				09EC8C01C47BCD4AF10F2D83 /* Pods-Firebase-Photo-Project.debug.xcconfig */,
+				D053D8D8EFD7F8545ED5D83F /* Pods-Firebase-Photo-Project.release.xcconfig */,
+				2070E6ADDB9E4E58334CA595 /* Pods-Firebase-Photo-ProjectTests.debug.xcconfig */,
+				6288482323E153E00156E628 /* Pods-Firebase-Photo-ProjectTests.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		E4CF6F18EF7742501EC29BA1 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EB52BE9E3DD975A9E5E42C64 /* Pods_Firebase_Photo_Project.framework */,
+				D40DB3A91C36C2C1D9B937CD /* Pods_Firebase_Photo_ProjectTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +253,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D8A1496240EE534000E53F6 /* Build configuration list for PBXNativeTarget "Firebase-Photo-Project" */;
 			buildPhases = (
+				644CBD6E598C158A96B410E0 /* [CP] Check Pods Manifest.lock */,
 				8D8A1473240EE52E000E53F6 /* Sources */,
 				8D8A1474240EE52E000E53F6 /* Frameworks */,
 				8D8A1475240EE52E000E53F6 /* Resources */,
+				C833CD7F84185A11FDBC2978 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -123,6 +272,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 8D8A1499240EE534000E53F6 /* Build configuration list for PBXNativeTarget "Firebase-Photo-ProjectTests" */;
 			buildPhases = (
+				9338C579A48378A2F453533E /* [CP] Check Pods Manifest.lock */,
 				8D8A1489240EE534000E53F6 /* Sources */,
 				8D8A148A240EE534000E53F6 /* Frameworks */,
 				8D8A148B240EE534000E53F6 /* Resources */,
@@ -181,8 +331,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				8D8A1487240EE534000E53F6 /* LaunchScreen.storyboard in Resources */,
+				8D8A149F240EECFA000E53F6 /* GoogleService-Info.plist in Resources */,
+				8DBCC405240F10EA00389A39 /* MainView.storyboard in Resources */,
+				8D9C7BD42412CB52008C2A4F /* FeedCell.xib in Resources */,
 				8D8A1484240EE534000E53F6 /* Assets.xcassets in Resources */,
-				8D8A1482240EE52E000E53F6 /* Main.storyboard in Resources */,
+				8D8A14A8240EF0C6000E53F6 /* LoginScreen.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -195,13 +348,91 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		644CBD6E598C158A96B410E0 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Firebase-Photo-Project-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9338C579A48378A2F453533E /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Firebase-Photo-ProjectTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C833CD7F84185A11FDBC2978 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Firebase-Photo-Project/Pods-Firebase-Photo-Project-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-Firebase-Photo-Project/Pods-Firebase-Photo-Project-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-Firebase-Photo-Project/Pods-Firebase-Photo-Project-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		8D8A1473240EE52E000E53F6 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8D8A14A6240EEF4F000E53F6 /* DesignableView.swift in Sources */,
+				8DBCC403240F068500389A39 /* DatabaseService.swift in Sources */,
+				8D9C7BDD2412CE71008C2A4F /* UIImage+Extension.swift in Sources */,
+				8DBCC40B240F121700389A39 /* ProfileViewController.swift in Sources */,
+				8DBCC409240F11F200389A39 /* MainTabBarController.swift in Sources */,
 				8D8A147F240EE52E000E53F6 /* ViewController.swift in Sources */,
+				8D9C7BD12412C819008C2A4F /* FeedViewController.swift in Sources */,
+				8DBCC40D240F123800389A39 /* CreatePhotoViewController.swift in Sources */,
 				8D8A147B240EE52E000E53F6 /* AppDelegate.swift in Sources */,
+				8D8A14AA240EFE0C000E53F6 /* LoginViewController.swift in Sources */,
+				8DBCC401240F065B00389A39 /* AuthenticationSession.swift in Sources */,
+				8D9C7BD62412CB71008C2A4F /* FeedCell.swift in Sources */,
+				8D9C7BDF2412DE2E008C2A4F /* StorageService.swift in Sources */,
+				8D9C7BD92412CC36008C2A4F /* UIViewController+NAvigation.swift in Sources */,
+				8D9C7BDB2412CE57008C2A4F /* UIViewController+Alerts.swift in Sources */,
+				8DBCC407240F11A000389A39 /* PhotoModel.swift in Sources */,
 				8D8A147D240EE52E000E53F6 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -225,14 +456,6 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
-		8D8A1480240EE52E000E53F6 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				8D8A1481240EE52E000E53F6 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		8D8A1485240EE534000E53F6 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
@@ -360,6 +583,7 @@
 		};
 		8D8A1497240EE534000E53F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 09EC8C01C47BCD4AF10F2D83 /* Pods-Firebase-Photo-Project.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -378,6 +602,7 @@
 		};
 		8D8A1498240EE534000E53F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = D053D8D8EFD7F8545ED5D83F /* Pods-Firebase-Photo-Project.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -396,6 +621,7 @@
 		};
 		8D8A149A240EE534000E53F6 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2070E6ADDB9E4E58334CA595 /* Pods-Firebase-Photo-ProjectTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -418,6 +644,7 @@
 		};
 		8D8A149B240EE534000E53F6 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6288482323E153E00156E628 /* Pods-Firebase-Photo-ProjectTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

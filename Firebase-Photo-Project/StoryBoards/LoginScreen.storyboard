@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="xFq-wU-fSB">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Login View Controller-->
+        <scene sceneID="rZT-P4-g0n">
+            <objects>
+                <viewController storyboardIdentifier="LoginViewController" id="xFq-wU-fSB" customClass="LoginViewController" customModule="Firebase_Photo_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="E2m-LP-o2u">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="FireGram" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BjL-DB-PYc">
+                                <rect key="frame" x="20" y="64" width="374" height="37"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="31"/>
+                                <color key="textColor" systemColor="systemIndigoColor" red="0.34509803919999998" green="0.33725490200000002" blue="0.83921568629999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="pursuit-logo" translatesAutoresizingMaskIntoConstraints="NO" id="GIG-15-eNG" customClass="DesignableImageView" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                <rect key="frame" x="137" y="141" width="140" height="140"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="140" id="9CI-C1-re8"/>
+                                    <constraint firstAttribute="height" constant="140" id="lIC-LB-m3D"/>
+                                    <constraint firstAttribute="width" secondItem="GIG-15-eNG" secondAttribute="height" multiplier="1:1" id="lid-VZ-Rp6"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="70"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" translatesAutoresizingMaskIntoConstraints="NO" id="llv-6P-Qcc">
+                                <rect key="frame" x="50" y="291" width="314" height="197"/>
+                                <subviews>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="email" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="ebc-XW-Vws" customClass="DesignableTextField" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="0.0" width="314" height="40"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="26"/>
+                                        <textInputTraits key="textInputTraits"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                                <real key="value" value="0.0"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="displayName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="k8x-kr-HcW" customClass="DesignableTextField" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="54.5" width="314" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <textInputTraits key="textInputTraits" autocorrectionType="no"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="password" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="gcs-zQ-YAy" customClass="DesignableTextField" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="103.5" width="314" height="34"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="20"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                    </textField>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ew9-Ub-cmP" customClass="DesignableButton" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="152" width="314" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="27"/>
+                                        <state key="normal" title="Login"/>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="loginButtonPressed:" destination="xFq-wU-fSB" eventType="touchUpInside" id="aD6-bP-Mcy"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemGreenColor" red="0.20392156859999999" green="0.78039215689999997" blue="0.34901960780000002" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </stackView>
+                            <stackView opaque="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7As-wT-XvP">
+                                <rect key="frame" x="50" y="513" width="314" height="45"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Don't have an account? Click" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mU4-1Q-vC2">
+                                        <rect key="frame" x="0.0" y="0.0" width="221" height="45"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="f45-7d-RO3" customClass="DesignableButton" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                        <rect key="frame" x="221" y="0.0" width="93" height="45"/>
+                                        <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
+                                        <state key="normal" title="SIGNUP">
+                                            <color key="titleColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        </state>
+                                        <userDefinedRuntimeAttributes>
+                                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                                <real key="value" value="20"/>
+                                            </userDefinedRuntimeAttribute>
+                                        </userDefinedRuntimeAttributes>
+                                        <connections>
+                                            <action selector="togglAccountStateButton:" destination="xFq-wU-fSB" eventType="touchUpInside" id="68O-W1-p9b"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                            </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="error label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qHd-o6-7ap">
+                                <rect key="frame" x="50" y="608" width="314" height="23"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="7As-wT-XvP" firstAttribute="top" secondItem="llv-6P-Qcc" secondAttribute="bottom" constant="25" id="38Y-Z4-Mhq"/>
+                            <constraint firstItem="llv-6P-Qcc" firstAttribute="height" secondItem="E2m-LP-o2u" secondAttribute="height" multiplier="0.22" id="BPe-eB-CkA"/>
+                            <constraint firstItem="qHd-o6-7ap" firstAttribute="top" secondItem="7As-wT-XvP" secondAttribute="bottom" constant="50" id="CI9-KW-YqZ"/>
+                            <constraint firstItem="7As-wT-XvP" firstAttribute="leading" secondItem="oQ2-hb-dFz" secondAttribute="leading" constant="50" id="EF9-js-cyf"/>
+                            <constraint firstItem="oQ2-hb-dFz" firstAttribute="trailing" secondItem="7As-wT-XvP" secondAttribute="trailing" constant="50" id="Ehn-VF-VN0"/>
+                            <constraint firstItem="llv-6P-Qcc" firstAttribute="leading" secondItem="oQ2-hb-dFz" secondAttribute="leading" constant="50" id="Fdt-TY-h11"/>
+                            <constraint firstItem="llv-6P-Qcc" firstAttribute="top" secondItem="GIG-15-eNG" secondAttribute="bottom" constant="10" id="Oas-BE-PvF"/>
+                            <constraint firstItem="GIG-15-eNG" firstAttribute="top" secondItem="BjL-DB-PYc" secondAttribute="bottom" constant="40" id="SRQ-5D-0uL"/>
+                            <constraint firstItem="BjL-DB-PYc" firstAttribute="top" secondItem="oQ2-hb-dFz" secondAttribute="top" constant="20" id="Scz-hi-uj5"/>
+                            <constraint firstItem="GIG-15-eNG" firstAttribute="centerX" secondItem="BjL-DB-PYc" secondAttribute="centerX" id="SkM-1A-UY6"/>
+                            <constraint firstItem="qHd-o6-7ap" firstAttribute="leading" secondItem="oQ2-hb-dFz" secondAttribute="leading" constant="50" id="VcU-cB-dEf"/>
+                            <constraint firstItem="7As-wT-XvP" firstAttribute="height" secondItem="E2m-LP-o2u" secondAttribute="height" multiplier="0.05" id="lKs-OL-tHe"/>
+                            <constraint firstItem="oQ2-hb-dFz" firstAttribute="trailing" secondItem="llv-6P-Qcc" secondAttribute="trailing" constant="50" id="nuw-FV-Emy"/>
+                            <constraint firstItem="oQ2-hb-dFz" firstAttribute="trailing" secondItem="BjL-DB-PYc" secondAttribute="trailing" constant="20" id="sOh-kB-YMH"/>
+                            <constraint firstItem="oQ2-hb-dFz" firstAttribute="trailing" secondItem="qHd-o6-7ap" secondAttribute="trailing" constant="50" id="sYN-9H-PrH"/>
+                            <constraint firstItem="BjL-DB-PYc" firstAttribute="leading" secondItem="oQ2-hb-dFz" secondAttribute="leading" constant="20" id="tdu-ib-KJP"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="oQ2-hb-dFz"/>
+                    </view>
+                    <connections>
+                        <outlet property="accountStateButton" destination="f45-7d-RO3" id="3wm-E3-789"/>
+                        <outlet property="accountStateLabel" destination="mU4-1Q-vC2" id="Pnb-KE-8i5"/>
+                        <outlet property="appNameLabel" destination="BjL-DB-PYc" id="147-qk-55J"/>
+                        <outlet property="displayNameTextField" destination="k8x-kr-HcW" id="Kug-zT-a6o"/>
+                        <outlet property="emailTextField" destination="ebc-XW-Vws" id="irc-9D-ByE"/>
+                        <outlet property="errorLabel" destination="qHd-o6-7ap" id="XAd-G4-1gJ"/>
+                        <outlet property="loginButton" destination="Ew9-Ub-cmP" id="Kkf-pZ-62G"/>
+                        <outlet property="passwordTextField" destination="gcs-zQ-YAy" id="S8j-ZW-oTd"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="QaT-CS-5OW" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1550.7246376811595" y="-1042.6339285714284"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="pursuit-logo" width="207" height="300"/>
+    </resources>
+</document>

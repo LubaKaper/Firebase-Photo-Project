@@ -1,0 +1,220 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Create Photo View Controller-->
+        <scene sceneID="Mxt-Oe-8gb">
+            <objects>
+                <viewController storyboardIdentifier="CreatePhotoViewController" id="HfI-Jb-Dkf" customClass="CreatePhotoViewController" customModule="Firebase_Photo_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Iqc-1l-8Et">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.crop.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="HuR-4X-oUE">
+                                <rect key="frame" x="0.0" y="88.5" width="414" height="357.5"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                            </imageView>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="write your caption" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="3gQ-Zl-bwt" customClass="DesignableTextField" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                <rect key="frame" x="20" y="486.5" width="374" height="34"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" weight="medium" pointSize="17"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="clk-ev-QjX" firstAttribute="trailing" secondItem="HuR-4X-oUE" secondAttribute="trailing" id="75i-en-etn"/>
+                            <constraint firstItem="HuR-4X-oUE" firstAttribute="top" secondItem="clk-ev-QjX" secondAttribute="top" id="FJJ-QP-0fH"/>
+                            <constraint firstItem="HuR-4X-oUE" firstAttribute="leading" secondItem="clk-ev-QjX" secondAttribute="leading" id="V48-cV-lDu"/>
+                            <constraint firstItem="HuR-4X-oUE" firstAttribute="height" secondItem="Iqc-1l-8Et" secondAttribute="height" multiplier="0.4" id="YQv-56-wQb"/>
+                            <constraint firstItem="clk-ev-QjX" firstAttribute="trailing" secondItem="3gQ-Zl-bwt" secondAttribute="trailing" constant="20" id="gbh-Bk-bbT"/>
+                            <constraint firstItem="3gQ-Zl-bwt" firstAttribute="leading" secondItem="clk-ev-QjX" secondAttribute="leading" constant="20" id="ifC-Mr-oQM"/>
+                            <constraint firstItem="3gQ-Zl-bwt" firstAttribute="top" secondItem="HuR-4X-oUE" secondAttribute="bottom" constant="40" id="llS-Be-MHC"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="clk-ev-QjX"/>
+                    </view>
+                    <toolbarItems/>
+                    <navigationItem key="navigationItem" id="1s0-Yw-YKC">
+                        <barButtonItem key="rightBarButtonItem" systemItem="action" id="Tpg-1b-du4">
+                            <connections>
+                                <action selector="uploadImageButtonPressed:" destination="HfI-Jb-Dkf" id="08j-zA-KRk"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
+                    <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
+                    <connections>
+                        <outlet property="captionTextField" destination="3gQ-Zl-bwt" id="Rvc-qM-aye"/>
+                        <outlet property="postImageView" destination="HuR-4X-oUE" id="3zk-c6-Meg"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="RIK-Mu-bpQ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1308.6956521739132" y="475.44642857142856"/>
+        </scene>
+        <!--profile-->
+        <scene sceneID="13z-CD-8Ut">
+            <objects>
+                <viewController storyboardIdentifier="ProfileViewController" id="JLX-wf-iHl" customClass="ProfileViewController" customModule="Firebase_Photo_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="s8C-rA-spv">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="person.circle.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="FMg-sH-2Xj" customClass="DesignableImageView" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                <rect key="frame" x="137" y="84.5" width="140" height="139"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="140" id="F9R-UB-fko"/>
+                                    <constraint firstAttribute="width" constant="140" id="igH-9m-oSu"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dispaly Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQ5-CC-Kfr">
+                                <rect key="frame" x="20" y="268" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9R-aC-53G">
+                                <rect key="frame" x="20" y="329.5" width="374" height="26.5"/>
+                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDS-Hx-mx5" customClass="DesignableButton" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                <rect key="frame" x="173" y="582" width="71" height="50"/>
+                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="17"/>
+                                <state key="normal" title="Sign Out">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signOutButtonPressed:" destination="JLX-wf-iHl" eventType="touchUpInside" id="EpL-eZ-mPS"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="WQ5-CC-Kfr" firstAttribute="top" secondItem="FMg-sH-2Xj" secondAttribute="bottom" constant="44" id="0yy-5B-TJk"/>
+                            <constraint firstItem="FMg-sH-2Xj" firstAttribute="centerX" secondItem="s8C-rA-spv" secondAttribute="centerX" id="QOm-od-Fph"/>
+                            <constraint firstItem="Frm-6I-fxp" firstAttribute="trailing" secondItem="X9R-aC-53G" secondAttribute="trailing" constant="20" id="TGE-Qc-6Nn"/>
+                            <constraint firstItem="Frm-6I-fxp" firstAttribute="trailing" secondItem="WQ5-CC-Kfr" secondAttribute="trailing" constant="20" id="TX2-er-4bh"/>
+                            <constraint firstItem="X9R-aC-53G" firstAttribute="leading" secondItem="Frm-6I-fxp" secondAttribute="leading" constant="20" id="U3j-1x-2EO"/>
+                            <constraint firstItem="FMg-sH-2Xj" firstAttribute="top" secondItem="Frm-6I-fxp" secondAttribute="top" constant="40" id="h88-cb-s50"/>
+                            <constraint firstItem="X9R-aC-53G" firstAttribute="top" secondItem="WQ5-CC-Kfr" secondAttribute="bottom" constant="35" id="m4v-0R-p4I"/>
+                            <constraint firstItem="WQ5-CC-Kfr" firstAttribute="leading" secondItem="Frm-6I-fxp" secondAttribute="leading" constant="20" id="z2H-2O-1ha"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Frm-6I-fxp"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="profile" id="9Vr-Pe-eci"/>
+                    <connections>
+                        <outlet property="displayNameLabel" destination="WQ5-CC-Kfr" id="dJ8-KR-f5n"/>
+                        <outlet property="emailLabel" destination="X9R-aC-53G" id="AiH-A5-rZ9"/>
+                        <outlet property="profileImageView" destination="FMg-sH-2Xj" id="3sl-Dm-1os"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="twY-jC-Ami" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="489.85507246376818" y="1238.8392857142856"/>
+        </scene>
+        <!--feed-->
+        <scene sceneID="neu-q2-oNh">
+            <objects>
+                <viewController storyboardIdentifier="FeedViewController" id="CaU-lT-dc2" customClass="FeedViewController" customModule="Firebase_Photo_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="tJA-4H-WWU">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <collectionView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" dataMode="prototypes" translatesAutoresizingMaskIntoConstraints="NO" id="ZaM-4j-Xon">
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="813"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <collectionViewFlowLayout key="collectionViewLayout" minimumLineSpacing="10" minimumInteritemSpacing="10" id="q8Z-1Q-NPb">
+                                    <size key="itemSize" width="50" height="152"/>
+                                    <size key="headerReferenceSize" width="0.0" height="0.0"/>
+                                    <size key="footerReferenceSize" width="0.0" height="0.0"/>
+                                    <inset key="sectionInset" minX="0.0" minY="0.0" maxX="0.0" maxY="0.0"/>
+                                </collectionViewFlowLayout>
+                                <cells/>
+                            </collectionView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="ZaM-4j-Xon" firstAttribute="top" secondItem="tJA-4H-WWU" secondAttribute="top" id="GBi-cN-8FQ"/>
+                            <constraint firstItem="ZaM-4j-Xon" firstAttribute="trailing" secondItem="OVE-08-LoX" secondAttribute="trailing" id="PSB-5j-oUg"/>
+                            <constraint firstItem="ZaM-4j-Xon" firstAttribute="bottom" secondItem="OVE-08-LoX" secondAttribute="bottom" id="j6d-Bw-hMd"/>
+                            <constraint firstItem="ZaM-4j-Xon" firstAttribute="leading" secondItem="OVE-08-LoX" secondAttribute="leading" id="qTq-b3-BNa"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="OVE-08-LoX"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="feed" id="d5O-oN-M63"/>
+                    <connections>
+                        <outlet property="collectionView" destination="ZaM-4j-Xon" id="vd8-SY-ObC"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="JBb-gh-3Ks" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398.55072463768118" y="-270.53571428571428"/>
+        </scene>
+        <!--Main Tab Bar Controller-->
+        <scene sceneID="6Hl-d9-09K">
+            <objects>
+                <tabBarController storyboardIdentifier="MainTabBarController" id="Mvu-Oa-UyL" customClass="MainTabBarController" customModule="Firebase_Photo_Project" customModuleProvider="target" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="f6f-Ux-lxC">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="CaU-lT-dc2" kind="relationship" relationship="viewControllers" id="4ae-1Y-GVt"/>
+                        <segue destination="AC2-1i-g2s" kind="relationship" relationship="viewControllers" id="oQx-my-qXK"/>
+                        <segue destination="JLX-wf-iHl" kind="relationship" relationship="viewControllers" id="SzQ-TU-5iR"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="d7T-hU-PeB" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-526" y="506"/>
+        </scene>
+        <!--create-->
+        <scene sceneID="k31-Uf-cye">
+            <objects>
+                <navigationController automaticallyAdjustsScrollViewInsets="NO" id="AC2-1i-g2s" sceneMemberID="viewController">
+                    <tabBarItem key="tabBarItem" title="create" id="Fo7-o5-VKl"/>
+                    <toolbarItems/>
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="hTG-Uc-NhE">
+                        <rect key="frame" x="0.0" y="44" width="414" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <nil name="viewControllers"/>
+                    <connections>
+                        <segue destination="HfI-Jb-Dkf" kind="relationship" relationship="rootViewController" id="93y-OC-SaB"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="KbG-jp-BVG" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="398.55072463768118" y="475.44642857142856"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="person.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
+    </resources>
+</document>

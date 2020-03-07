@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15509"/>
+        <capability name="collection view cell content view" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <collectionViewCell opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" reuseIdentifier="feedCell" id="nuG-JH-nLl" customClass="FeedCell" customModule="Firebase_Photo_Project" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="309" height="329"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <collectionViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" id="YsI-i2-T4z">
+                <rect key="frame" x="0.0" y="0.0" width="309" height="329"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="photo.fill" catalog="system" translatesAutoresizingMaskIntoConstraints="NO" id="7If-Nw-7kx">
+                        <rect key="frame" x="0.0" y="1" width="309" height="260.5"/>
+                    </imageView>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Caption" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="7Y1-k2-6MJ">
+                        <rect key="frame" x="16" y="270.5" width="277" height="24"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleTitle3"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="userName" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sIs-vb-Ck6">
+                        <rect key="frame" x="16" y="302.5" width="277" height="18"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="BB9-bf-MEA">
+                        <rect key="frame" x="16" y="328.5" width="277" height="18"/>
+                        <fontDescription key="fontDescription" style="UICTFontTextStyleSubhead"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                <constraints>
+                    <constraint firstItem="7Y1-k2-6MJ" firstAttribute="top" secondItem="7If-Nw-7kx" secondAttribute="bottom" constant="7.5" id="3J8-Te-zlR"/>
+                    <constraint firstAttribute="trailing" secondItem="7If-Nw-7kx" secondAttribute="trailing" id="884-Qd-2CJ"/>
+                    <constraint firstAttribute="trailing" secondItem="sIs-vb-Ck6" secondAttribute="trailing" constant="16" id="8Ep-8b-KNG"/>
+                    <constraint firstItem="7If-Nw-7kx" firstAttribute="leading" secondItem="YsI-i2-T4z" secondAttribute="leading" id="8es-am-Yqg"/>
+                    <constraint firstItem="BB9-bf-MEA" firstAttribute="top" secondItem="sIs-vb-Ck6" secondAttribute="bottom" constant="8" id="9uP-Vb-fwo"/>
+                    <constraint firstItem="7Y1-k2-6MJ" firstAttribute="leading" secondItem="YsI-i2-T4z" secondAttribute="leading" constant="16" id="J0C-Vo-6Z7"/>
+                    <constraint firstItem="BB9-bf-MEA" firstAttribute="leading" secondItem="YsI-i2-T4z" secondAttribute="leading" constant="16" id="NeB-aR-ZIA"/>
+                    <constraint firstItem="7If-Nw-7kx" firstAttribute="height" secondItem="YsI-i2-T4z" secondAttribute="height" multiplier="0.8" id="TLX-dQ-xxV"/>
+                    <constraint firstItem="sIs-vb-Ck6" firstAttribute="leading" secondItem="YsI-i2-T4z" secondAttribute="leading" constant="16" id="XkS-48-lS7"/>
+                    <constraint firstItem="7If-Nw-7kx" firstAttribute="top" secondItem="YsI-i2-T4z" secondAttribute="top" id="etm-Z3-Xgo"/>
+                    <constraint firstAttribute="trailing" secondItem="7Y1-k2-6MJ" secondAttribute="trailing" constant="16" id="fbj-Cv-eeO"/>
+                    <constraint firstAttribute="trailing" secondItem="BB9-bf-MEA" secondAttribute="trailing" constant="16" id="jLp-Un-cjy"/>
+                    <constraint firstItem="sIs-vb-Ck6" firstAttribute="top" secondItem="7Y1-k2-6MJ" secondAttribute="bottom" constant="8" id="oER-7C-IyM"/>
+                </constraints>
+            </collectionViewCellContentView>
+            <size key="customSize" width="309" height="329"/>
+            <connections>
+                <outlet property="captionLabel" destination="7Y1-k2-6MJ" id="ihO-KW-U3b"/>
+                <outlet property="dateLabel" destination="BB9-bf-MEA" id="qaS-Z8-ROF"/>
+                <outlet property="postImageView" destination="7If-Nw-7kx" id="DxC-nE-gH4"/>
+                <outlet property="userNameLabel" destination="sIs-vb-Ck6" id="BOX-Fd-JMR"/>
+            </connections>
+            <point key="canvasLocation" x="121.0144927536232" y="93.415178571428569"/>
+        </collectionViewCell>
+    </objects>
+    <resources>
+        <image name="photo.fill" catalog="system" width="64" height="46"/>
+    </resources>
+</document>
