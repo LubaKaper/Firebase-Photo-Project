@@ -82,24 +82,17 @@
                                     </userDefinedRuntimeAttribute>
                                 </userDefinedRuntimeAttributes>
                             </imageView>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Dispaly Name" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="WQ5-CC-Kfr">
-                                <rect key="frame" x="20" y="268" width="374" height="26.5"/>
-                                <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
-                                <nil key="textColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
                             <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Email" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="X9R-aC-53G">
                                 <rect key="frame" x="20" y="329.5" width="374" height="26.5"/>
                                 <fontDescription key="fontDescription" style="UICTFontTextStyleTitle2"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDS-Hx-mx5" customClass="DesignableButton" customModule="Firebase_Photo_Project" customModuleProvider="target">
-                                <rect key="frame" x="173" y="582" width="71" height="50"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="17"/>
-                                <state key="normal" title="Sign Out">
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDS-Hx-mx5" customClass="DesignableButton" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                <rect key="frame" x="137" y="749" width="140" height="43"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
+                                <state key="normal">
                                     <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 </state>
                                 <userDefinedRuntimeAttributes>
@@ -111,30 +104,74 @@
                                     <action selector="signOutButtonPressed:" destination="JLX-wf-iHl" eventType="touchUpInside" id="EpL-eZ-mPS"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1R-bh-ATQ" customClass="DesignableButton" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                <rect key="frame" x="276" y="93" width="26" height="26"/>
+                                <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="30" id="q9g-CC-kGi"/>
+                                </constraints>
+                                <state key="normal" backgroundImage="plus" catalog="system"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="50"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="editImageButtonPressed:" destination="JLX-wf-iHl" eventType="touchUpInside" id="xy0-x1-n06"/>
+                                </connections>
+                            </button>
+                            <textField opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" placeholder="displayName" textAlignment="center" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="Kmz-RA-qjJ" customClass="DesignableTextField" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                <rect key="frame" x="20" y="268" width="374" height="34"/>
+                                <color key="backgroundColor" systemColor="systemYellowColor" red="1" green="0.80000000000000004" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="19"/>
+                                <textInputTraits key="textInputTraits"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </textField>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="cu2-RR-w1j">
+                                <rect key="frame" x="152" y="431.5" width="110" height="33"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <state key="normal" title="Update Profile"/>
+                                <connections>
+                                    <action selector="updateProfileButtonPressed:" destination="JLX-wf-iHl" eventType="touchUpInside" id="oUK-Tk-myC"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
-                            <constraint firstItem="WQ5-CC-Kfr" firstAttribute="top" secondItem="FMg-sH-2Xj" secondAttribute="bottom" constant="44" id="0yy-5B-TJk"/>
+                            <constraint firstItem="cu2-RR-w1j" firstAttribute="centerY" secondItem="s8C-rA-spv" secondAttribute="centerY" id="03L-Bj-V5B"/>
+                            <constraint firstItem="Frm-6I-fxp" firstAttribute="trailing" secondItem="Kmz-RA-qjJ" secondAttribute="trailing" constant="20" id="AlE-c3-xEd"/>
+                            <constraint firstItem="Kmz-RA-qjJ" firstAttribute="leading" secondItem="Frm-6I-fxp" secondAttribute="leading" constant="20" id="AtR-CQ-27b"/>
+                            <constraint firstItem="Frm-6I-fxp" firstAttribute="trailing" secondItem="Y1R-bh-ATQ" secondAttribute="trailing" constant="112" id="IdX-Bz-ypK"/>
+                            <constraint firstItem="Frm-6I-fxp" firstAttribute="trailing" secondItem="X9R-aC-53G" secondAttribute="trailing" constant="20" id="Kxe-Zi-sfl"/>
+                            <constraint firstItem="MDS-Hx-mx5" firstAttribute="trailing" secondItem="FMg-sH-2Xj" secondAttribute="trailing" id="LME-bh-pa5"/>
+                            <constraint firstItem="Y1R-bh-ATQ" firstAttribute="leading" secondItem="Frm-6I-fxp" secondAttribute="leading" constant="276" id="Lh6-bi-XqD"/>
+                            <constraint firstItem="Frm-6I-fxp" firstAttribute="bottom" secondItem="MDS-Hx-mx5" secondAttribute="bottom" constant="21" id="Mec-yC-GQf"/>
                             <constraint firstItem="FMg-sH-2Xj" firstAttribute="centerX" secondItem="s8C-rA-spv" secondAttribute="centerX" id="QOm-od-Fph"/>
-                            <constraint firstItem="Frm-6I-fxp" firstAttribute="trailing" secondItem="X9R-aC-53G" secondAttribute="trailing" constant="20" id="TGE-Qc-6Nn"/>
-                            <constraint firstItem="Frm-6I-fxp" firstAttribute="trailing" secondItem="WQ5-CC-Kfr" secondAttribute="trailing" constant="20" id="TX2-er-4bh"/>
-                            <constraint firstItem="X9R-aC-53G" firstAttribute="leading" secondItem="Frm-6I-fxp" secondAttribute="leading" constant="20" id="U3j-1x-2EO"/>
+                            <constraint firstItem="Kmz-RA-qjJ" firstAttribute="top" secondItem="FMg-sH-2Xj" secondAttribute="bottom" constant="44" id="cWx-UN-v2U"/>
                             <constraint firstItem="FMg-sH-2Xj" firstAttribute="top" secondItem="Frm-6I-fxp" secondAttribute="top" constant="40" id="h88-cb-s50"/>
-                            <constraint firstItem="X9R-aC-53G" firstAttribute="top" secondItem="WQ5-CC-Kfr" secondAttribute="bottom" constant="35" id="m4v-0R-p4I"/>
-                            <constraint firstItem="WQ5-CC-Kfr" firstAttribute="leading" secondItem="Frm-6I-fxp" secondAttribute="leading" constant="20" id="z2H-2O-1ha"/>
+                            <constraint firstItem="MDS-Hx-mx5" firstAttribute="leading" secondItem="FMg-sH-2Xj" secondAttribute="leading" id="hHY-CC-gGR"/>
+                            <constraint firstItem="X9R-aC-53G" firstAttribute="leading" secondItem="Frm-6I-fxp" secondAttribute="leading" constant="20" id="l8e-KB-yU0"/>
+                            <constraint firstItem="cu2-RR-w1j" firstAttribute="centerX" secondItem="s8C-rA-spv" secondAttribute="centerX" id="rPQ-0B-0dl"/>
+                            <constraint firstItem="X9R-aC-53G" firstAttribute="top" secondItem="Kmz-RA-qjJ" secondAttribute="bottom" constant="27.5" id="sMe-CY-yBs"/>
+                            <constraint firstItem="Y1R-bh-ATQ" firstAttribute="top" secondItem="Frm-6I-fxp" secondAttribute="top" constant="47" id="xYw-U6-DH0"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="Frm-6I-fxp"/>
                     </view>
                     <tabBarItem key="tabBarItem" title="profile" id="9Vr-Pe-eci"/>
                     <connections>
-                        <outlet property="displayNameLabel" destination="WQ5-CC-Kfr" id="dJ8-KR-f5n"/>
+                        <outlet property="displayNameTextField" destination="Kmz-RA-qjJ" id="8wl-QB-V4S"/>
                         <outlet property="emailLabel" destination="X9R-aC-53G" id="AiH-A5-rZ9"/>
+                        <outlet property="logOutButton" destination="MDS-Hx-mx5" id="Lfe-Sc-cYt"/>
                         <outlet property="profileImageView" destination="FMg-sH-2Xj" id="3sl-Dm-1os"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="twY-jC-Ami" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="489.85507246376818" y="1238.8392857142856"/>
+            <point key="canvasLocation" x="489.85507246376818" y="1238.1696428571429"/>
         </scene>
         <!--feed-->
         <scene sceneID="neu-q2-oNh">
@@ -216,5 +253,6 @@
     <resources>
         <image name="person.circle.fill" catalog="system" width="64" height="60"/>
         <image name="person.crop.circle.fill" catalog="system" width="64" height="60"/>
+        <image name="plus" catalog="system" width="64" height="56"/>
     </resources>
 </document>

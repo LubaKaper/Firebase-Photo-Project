@@ -27,7 +27,7 @@ class StorageService {
         var photoReference: StorageReference!
         
         if let userId = userId { // coming from ProfileVC
-            photoReference = storageRef.child("UserProfilrPhotos/\(userId).jpg")
+            photoReference = storageRef.child("UserProfilePhotos/\(userId).jpg")
         } else if let itemId = itemId{ // coming from CreateItemVC
             photoReference = storageRef.child("ItemsPhotos/\(itemId).jpg")
         }

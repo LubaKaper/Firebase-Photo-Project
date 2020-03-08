@@ -42,7 +42,7 @@ class CreatePhotoViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         navigationItem.title = "New Post"
-        
+        captionTextField.delegate = self
         postImageView.isUserInteractionEnabled = true
         postImageView.addGestureRecognizer(longPressGesture)
        
@@ -70,7 +70,7 @@ class CreatePhotoViewController: UIViewController {
     
 
     @IBAction func uploadImageButtonPressed(_ sender: UIBarButtonItem) {
-        guard let caption = captionTextField.text,
+        guard let photoName = captionTextField.text,
             let selectedImage = selectedImage else {
                 showAlert(title: "Missing image", message: "image is required for the post")
                 return
@@ -82,7 +82,7 @@ class CreatePhotoViewController: UIViewController {
         // resize image before uploadimg to storage
         let resizedImage = UIImage.resizeImage(originalImage: selectedImage, rect: postImageView.bounds)
         
-        dbService.createItem(caption: caption, displayName: displayName) {[weak self] (result) in
+        dbService.createItem(photoName: photoName, displayName: displayName) {[weak self] (result) in
             switch result {
             case .failure(let error):
                 DispatchQueue.main.async {
@@ -133,5 +133,11 @@ extension CreatePhotoViewController: UIImagePickerControllerDelegate, UINavigati
         }
         selectedImage = image
         dismiss(animated: true)
+    }
+}
+extension CreatePhotoViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
     }
 }

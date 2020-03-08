@@ -23,8 +23,8 @@ class FeedCell: UICollectionViewCell {
     
     public func configureCell(for post: PhotoPost) {
         postImageView.kf.setImage(with: URL(string: post.imageURL))
-        captionLabel.text = post.caption
-        userNameLabel.text = "@\(post.displayName)"
+        captionLabel.text = post.photoName
+        userNameLabel.text = "@\(post.sellerName)"
         dateLabel.text = post.postedDate.description
     }
     

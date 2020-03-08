@@ -22,7 +22,7 @@ class DatabaseService {
 //    let accountId: String
 //    let imageURL: String
     
-    public func createItem(caption: String, displayName: String, completion: @escaping (Result <String,Error>) ->()){
+    public func createItem(photoName: String, displayName: String, completion: @escaping (Result <String,Error>) ->()){
          
         guard let user = Auth.auth().currentUser else { return }
         
@@ -32,7 +32,7 @@ class DatabaseService {
         // create document in our items collection
         // data we pass has to be key:value format
         
-        db.collection(DatabaseService.itemsCollection).document(documentRef.documentID).setData(["photoName": caption, "displayName": displayName, "photoId": documentRef.documentID, "postedDate":Timestamp(date: Date()), "sellerName":displayName,"accountId":user.uid]) { (error) in
+        db.collection(DatabaseService.itemsCollection).document(documentRef.documentID).setData(["photoName": photoName,  "photoId": documentRef.documentID, "postedDate":Timestamp(date: Date()), "sellerName":displayName,"accountId":user.uid]) { (error) in
             if let error = error {
                 completion(.failure(error))
             } else {
