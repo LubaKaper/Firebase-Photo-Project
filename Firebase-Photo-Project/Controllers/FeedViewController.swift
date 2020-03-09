@@ -67,6 +67,7 @@ extension FeedViewController: UICollectionViewDataSource {
     }
     
     
+    
 }
 
 extension FeedViewController: UICollectionViewDelegateFlowLayout {
@@ -87,6 +88,20 @@ extension FeedViewController: UICollectionViewDelegateFlowLayout {
     
     func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, insetForSectionAt section: Int) -> UIEdgeInsets {
         return UIEdgeInsets(top: 10, left: 0, bottom: 0, right: 0)
+    }
+    
+    func collectionView(_ collectionView: UICollectionView, didSelectItemAt indexPath: IndexPath) {
+        print("cell was selected")
+        let selectedPost = posts[indexPath.row]
+        
+        let storyboard = UIStoryboard(name: "MainView", bundle: nil)
+        let detaiVC = storyboard.instantiateViewController(identifier: "DetailViewController") { coder in
+            return DetailViewController(coder: coder, selectedPost)
+        }
+       // present(UINavigationController(rootViewController: detaiVC), animated: true, completion: nil)
+        //detaiVC.selectedEntry = selectedPost
+       navigationController?.pushViewController(detaiVC, animated: true)
+        //present(detaiVC, animated: true)
     }
     
 }

@@ -33,6 +33,7 @@
 		8DBCC409240F11F200389A39 /* MainTabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCC408240F11F200389A39 /* MainTabBarController.swift */; };
 		8DBCC40B240F121700389A39 /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCC40A240F121700389A39 /* ProfileViewController.swift */; };
 		8DBCC40D240F123800389A39 /* CreatePhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBCC40C240F123800389A39 /* CreatePhotoViewController.swift */; };
+		8DBECFA12416D015000639C4 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8DBECFA02416D015000639C4 /* DetailViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -77,6 +78,7 @@
 		8DBCC408240F11F200389A39 /* MainTabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainTabBarController.swift; sourceTree = "<group>"; };
 		8DBCC40A240F121700389A39 /* ProfileViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		8DBCC40C240F123800389A39 /* CreatePhotoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CreatePhotoViewController.swift; sourceTree = "<group>"; };
+		8DBECFA02416D015000639C4 /* DetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		D053D8D8EFD7F8545ED5D83F /* Pods-Firebase-Photo-Project.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Firebase-Photo-Project.release.xcconfig"; path = "Target Support Files/Pods-Firebase-Photo-Project/Pods-Firebase-Photo-Project.release.xcconfig"; sourceTree = "<group>"; };
 		D40DB3A91C36C2C1D9B937CD /* Pods_Firebase_Photo_ProjectTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Photo_ProjectTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		EB52BE9E3DD975A9E5E42C64 /* Pods_Firebase_Photo_Project.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Firebase_Photo_Project.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -183,6 +185,7 @@
 				8DBCC40A240F121700389A39 /* ProfileViewController.swift */,
 				8DBCC40C240F123800389A39 /* CreatePhotoViewController.swift */,
 				8D9C7BD02412C819008C2A4F /* FeedViewController.swift */,
+				8DBECFA02416D015000639C4 /* DetailViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -426,6 +429,7 @@
 				8D9C7BD12412C819008C2A4F /* FeedViewController.swift in Sources */,
 				8DBCC40D240F123800389A39 /* CreatePhotoViewController.swift in Sources */,
 				8D8A147B240EE52E000E53F6 /* AppDelegate.swift in Sources */,
+				8DBECFA12416D015000639C4 /* DetailViewController.swift in Sources */,
 				8D8A14AA240EFE0C000E53F6 /* LoginViewController.swift in Sources */,
 				8DBCC401240F065B00389A39 /* AuthenticationSession.swift in Sources */,
 				8D9C7BD62412CB71008C2A4F /* FeedCell.swift in Sources */,

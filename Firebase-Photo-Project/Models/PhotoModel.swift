@@ -26,7 +26,7 @@ extension PhotoPost {
         self.sellerName = dictionary["sellerName"] as? String ?? "no name"
         self.accountId = dictionary["accountId"] as? String ?? "no id"
         self.imageURL = dictionary["imageURL"] as? String ?? "no url"
-        self.photoName = dictionary["photoName "] as? String ?? "no caption"
+        self.photoName = dictionary["photoName"] as? String ?? "no caption"
         
     }
 }
