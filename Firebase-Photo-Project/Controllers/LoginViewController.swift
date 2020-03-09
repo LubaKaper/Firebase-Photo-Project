@@ -47,6 +47,11 @@ class LoginViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         clearErrorLabel()
+        emailTextField.delegate = self
+        passwordTextField.delegate = self
+        displayNameTextField.delegate = self
+        errorLabel.numberOfLines = 3
+        emailTextField.keyboardType = UIKeyboardType.emailAddress
 
     }
    
@@ -147,4 +152,13 @@ class LoginViewController: UIViewController {
         }
     }
     
+}
+extension LoginViewController: UITextFieldDelegate {
+    
+    // dismisses keyboard after Enter pressed
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        textField.resignFirstResponder()
+        return true
+        
+    }
 }

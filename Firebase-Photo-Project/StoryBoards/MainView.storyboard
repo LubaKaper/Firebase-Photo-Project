@@ -88,22 +88,6 @@
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDS-Hx-mx5" customClass="DesignableButton" customModule="Firebase_Photo_Project" customModuleProvider="target">
-                                <rect key="frame" x="137" y="749" width="140" height="43"/>
-                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
-                                <state key="normal">
-                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                </state>
-                                <userDefinedRuntimeAttributes>
-                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
-                                        <real key="value" value="20"/>
-                                    </userDefinedRuntimeAttribute>
-                                </userDefinedRuntimeAttributes>
-                                <connections>
-                                    <action selector="signOutButtonPressed:" destination="JLX-wf-iHl" eventType="touchUpInside" id="EpL-eZ-mPS"/>
-                                </connections>
-                            </button>
                             <button opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Y1R-bh-ATQ" customClass="DesignableButton" customModule="Firebase_Photo_Project" customModuleProvider="target">
                                 <rect key="frame" x="276" y="93" width="26" height="26"/>
                                 <color key="backgroundColor" systemColor="systemOrangeColor" red="1" green="0.58431372550000005" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
@@ -139,6 +123,31 @@
                                     <action selector="updateProfileButtonPressed:" destination="JLX-wf-iHl" eventType="touchUpInside" id="oUK-Tk-myC"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="P6P-Xw-STh">
+                                <rect key="frame" x="154.5" y="749" width="105" height="30"/>
+                                <state key="normal" title="Delete Account">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <connections>
+                                    <action selector="deleteButtonPressed:" destination="JLX-wf-iHl" eventType="touchUpInside" id="UhG-fT-aWM"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" clipsSubviews="YES" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MDS-Hx-mx5" customClass="DesignableButton" customModule="Firebase_Photo_Project" customModuleProvider="target">
+                                <rect key="frame" x="175" y="671" width="64" height="43"/>
+                                <color key="backgroundColor" systemColor="systemTealColor" red="0.35294117650000001" green="0.7843137255" blue="0.98039215690000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <fontDescription key="fontDescription" name="NotoSansMyanmar-Bold" family="Noto Sans Myanmar" pointSize="14"/>
+                                <state key="normal" title="SIGNOUT">
+                                    <color key="titleColor" systemColor="systemRedColor" red="1" green="0.23137254900000001" blue="0.18823529410000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="20"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="signOutButtonPressed:" destination="JLX-wf-iHl" eventType="touchUpInside" id="EpL-eZ-mPS"/>
+                                </connections>
+                            </button>
                         </subviews>
                         <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                         <constraints>
@@ -147,14 +156,15 @@
                             <constraint firstItem="Kmz-RA-qjJ" firstAttribute="leading" secondItem="Frm-6I-fxp" secondAttribute="leading" constant="20" id="AtR-CQ-27b"/>
                             <constraint firstItem="Frm-6I-fxp" firstAttribute="trailing" secondItem="Y1R-bh-ATQ" secondAttribute="trailing" constant="112" id="IdX-Bz-ypK"/>
                             <constraint firstItem="Frm-6I-fxp" firstAttribute="trailing" secondItem="X9R-aC-53G" secondAttribute="trailing" constant="20" id="Kxe-Zi-sfl"/>
-                            <constraint firstItem="MDS-Hx-mx5" firstAttribute="trailing" secondItem="FMg-sH-2Xj" secondAttribute="trailing" id="LME-bh-pa5"/>
                             <constraint firstItem="Y1R-bh-ATQ" firstAttribute="leading" secondItem="Frm-6I-fxp" secondAttribute="leading" constant="276" id="Lh6-bi-XqD"/>
-                            <constraint firstItem="Frm-6I-fxp" firstAttribute="bottom" secondItem="MDS-Hx-mx5" secondAttribute="bottom" constant="21" id="Mec-yC-GQf"/>
                             <constraint firstItem="FMg-sH-2Xj" firstAttribute="centerX" secondItem="s8C-rA-spv" secondAttribute="centerX" id="QOm-od-Fph"/>
                             <constraint firstItem="Kmz-RA-qjJ" firstAttribute="top" secondItem="FMg-sH-2Xj" secondAttribute="bottom" constant="44" id="cWx-UN-v2U"/>
+                            <constraint firstItem="Frm-6I-fxp" firstAttribute="bottom" secondItem="P6P-Xw-STh" secondAttribute="bottom" constant="34" id="euE-1R-kdC"/>
+                            <constraint firstItem="MDS-Hx-mx5" firstAttribute="centerX" secondItem="s8C-rA-spv" secondAttribute="centerX" id="gvm-Wg-ZA9"/>
                             <constraint firstItem="FMg-sH-2Xj" firstAttribute="top" secondItem="Frm-6I-fxp" secondAttribute="top" constant="40" id="h88-cb-s50"/>
-                            <constraint firstItem="MDS-Hx-mx5" firstAttribute="leading" secondItem="FMg-sH-2Xj" secondAttribute="leading" id="hHY-CC-gGR"/>
+                            <constraint firstItem="P6P-Xw-STh" firstAttribute="centerX" secondItem="s8C-rA-spv" secondAttribute="centerX" id="iov-TX-ays"/>
                             <constraint firstItem="X9R-aC-53G" firstAttribute="leading" secondItem="Frm-6I-fxp" secondAttribute="leading" constant="20" id="l8e-KB-yU0"/>
+                            <constraint firstItem="P6P-Xw-STh" firstAttribute="top" secondItem="MDS-Hx-mx5" secondAttribute="bottom" constant="35" id="n6e-Ed-D8i"/>
                             <constraint firstItem="cu2-RR-w1j" firstAttribute="centerX" secondItem="s8C-rA-spv" secondAttribute="centerX" id="rPQ-0B-0dl"/>
                             <constraint firstItem="X9R-aC-53G" firstAttribute="top" secondItem="Kmz-RA-qjJ" secondAttribute="bottom" constant="27.5" id="sMe-CY-yBs"/>
                             <constraint firstItem="Y1R-bh-ATQ" firstAttribute="top" secondItem="Frm-6I-fxp" secondAttribute="top" constant="47" id="xYw-U6-DH0"/>

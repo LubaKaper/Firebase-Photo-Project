@@ -133,6 +133,23 @@ class ProfileViewController: UIViewController {
         }
     }
     
+    
+    @IBAction func deleteButtonPressed(_ sender: UIButton) {
+        let user = Auth.auth().currentUser
+        user?.delete(completion: { (error) in
+            if let error = error {
+                self.showAlert(title: "Could not delete this account" , message: "error deleting account:\(error.localizedDescription)")
+            } else {
+                self.showAlert(title: "success", message: "Your account was deleted")
+                DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+                    UIViewController.showViewController(storyboardName: "LoginScreen", viewControllerID: "LoginViewController")
+                }
+               
+            }
+        })
+        
+    }
+    
 
 }
 
