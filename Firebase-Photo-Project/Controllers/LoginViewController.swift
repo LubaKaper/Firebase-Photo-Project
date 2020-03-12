@@ -9,6 +9,8 @@
 import UIKit
 import FirebaseAuth
 
+// last day
+
 enum AccountState {
   case existingUser
   case newUser
