@@ -87,7 +87,6 @@ class LoginViewController: UIViewController {
                     case .success:
                         let request = Auth.auth().currentUser?.createProfileChangeRequest()
                         request?.displayName = displayName
-
                         DispatchQueue.main.async {
                            self?.navigateToMainView()
                             
